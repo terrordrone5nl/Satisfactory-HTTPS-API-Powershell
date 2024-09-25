@@ -6,7 +6,9 @@ The in-game console is only really used to restart the server, but whenever ther
 I'm sharing these scripts to serve as examples for anyone looking to do something similar. The scripts NEED to be edited to change the server address and optionally store your admin password. I DO NOT recommend storing your password in these files.
 There is 0 error handling or output.
 Powershell 6.0 or higher is required, unless you have a valid and trusted certificate installed on the server. If you do have a certificate, the scripts ''should'' work just fine on any Powershell version after removing any instances of "-SkipCertificateCheck"
-Actually running the scripts boils down to opening a Powershell terminal and issuing "C:\Path\To\Shutdown-Satisfactory.ps1 -Executionpolicy bypass"
+
+Configure the scripts by editing them and adding your own configuration below the line that says "Change these settings"
+Running the scripts boils down to opening a Powershell terminal and issuing "C:\Path\To\Shutdown-Satisfactory.ps1 -Executionpolicy bypass"
 
 Shutdown-Satisfactory.ps1 will connect to the server, authenticate and then issue a shutdown. Assuming you've got a script running that updates and then restarts the server, any user with the script and your admin password can update or restart your server on-demand.
 https://github.com/terrordrone5nl/Satisfactory-HTTPS-API-Powershell/blob/master/Shutdown-Satisfactory.ps1
