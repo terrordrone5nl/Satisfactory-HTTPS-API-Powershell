@@ -1,4 +1,1 @@
-terry
-=====
 
-simple projects
