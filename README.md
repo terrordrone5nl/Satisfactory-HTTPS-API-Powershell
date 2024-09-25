@@ -11,6 +11,7 @@ Configure the scripts by editing them and adding your own configuration below th
 Running the scripts boils down to opening a Powershell terminal and issuing "C:\Path\To\Shutdown-Satisfactory.ps1 -Executionpolicy bypass"
 
 Shutdown-Satisfactory.ps1 will connect to the server, authenticate and then issue a shutdown. Assuming you've got a script running that updates and then restarts the server, any user with the script and your admin password can update or restart your server on-demand.
+
 https://github.com/terrordrone5nl/Satisfactory-HTTPS-API-Powershell/blob/master/Shutdown-Satisfactory.ps1
 
 Because everyone on my server loves the interactive map I've automated the fetching of Savefiles to upload to the interactive map.
@@ -19,4 +20,5 @@ Download-Satisfactory.ps1 boils down to the following steps;
   2. remove the existing savefile called DownloadSave (Will error silently if this file doesn't exist, does not impact the rest of the script)
   3. create a new savefile called DownloadSave
   4. download DownloadSave to whatever directory is configured as the default download directory for the user. The file will be named DownloadSave.sav
+
 https://github.com/terrordrone5nl/Satisfactory-HTTPS-API-Powershell/blob/master/Download-Satisfactory.ps1
