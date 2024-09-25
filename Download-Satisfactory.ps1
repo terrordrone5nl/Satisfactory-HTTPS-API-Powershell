@@ -40,7 +40,7 @@ $Password = ""
 
 
 #Shared variables.
-$Uri = '$ServerAddress/api/v1/'
+$Uri = "$ServerAddress" + '/api/v1/'
 $ContentType = 'application/json'
 $Method = 'POST'
 if ($Password -eq ""){$Password = Read-Host "Enter administrator Password" -MaskInput}
